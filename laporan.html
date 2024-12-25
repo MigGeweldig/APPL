@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body data-page="laporan">
+    <div class="laporan-container">
+        <h1>Laporan Keuangan</h1>
+        <div class="filter-section">
+            <label for="filter">Filter Laporan:</label>
+            <select id="filter" name="filter">
+                <option value="bulan-ini">Bulan Ini</option>
+                <option value="bulan-lalu">Bulan Lalu</option>
+                <option value="3-bulan-lalu">3 Bulan Lalu</option>
+            </select>
+        </div>
+        <div class="chart-section">
+            <h2>Grafik Keuangan</h2>
+            <canvas id="keuanganChart" width="400" height="200"></canvas> <!-- Elemen grafik -->
+        </div>
+        <button class="keluar-button" onclick="redirectToDashboard()">Keluar</button>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

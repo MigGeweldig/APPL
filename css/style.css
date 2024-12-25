@@ -1,0 +1,124 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    color: #333;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+/* Container styling for different sections */
+.login-container, .register-container, .dashboard-container, .catatan-container, .laporan-container, .reminder-container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 30px;
+    background: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Form label styling */
+label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 500;
+    color: #555;
+}
+
+/* Input and select styling */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* Submit button */
+button[type='submit'] {
+    background-color: #28a745;
+    color: white;
+}
+button[type='submit']:hover {
+    background-color: #218838;
+}
+
+/* Logout button */
+.logout-button, .keluar-button {
+    background-color: #dc3545;
+    color: white;
+}
+.logout-button:hover, .keluar-button:hover {
+    background-color: #c82333;
+}
+
+/* Dashboard button styling */
+.dashboard-button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #4A5C6A;
+    color: #121212;
+    background-color: #CCD0CF;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.dashboard-button:hover {
+    background-color: #4A5C6A;
+    color: white;
+}
+
+/* Flexbox container for dashboard buttons */
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+/* Chart container styling */
+.chart-section {
+    margin-top: 20px;
+}
+
+/* Reminder list styling */
+.reminder-list {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.reminder-list h2 {
+    margin-top: 0;
+}
+
+/* Responsive styling */
+@media (max-width: 500px) {
+    .login-container, .dashboard-container, .catatan-container, .laporan-container, .reminder-container {
+        padding: 20px;
+    }
+}
